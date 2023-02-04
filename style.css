@@ -1,0 +1,43 @@
+div {
+    text-align: center;
+    font-family: Georgia;
+}
+
+#content {
+    margin:auto;
+    width:275px;
+    padding:7px;
+}
+
+.title {
+    text-shadow: 0 0 2px black;
+}
+
+.under-title {
+    font-size: 0.7rem;
+    padding-bottom: 4px;
+}
+
+.content-header {
+    border-bottom: 2px solid;
+    padding-bottom: 13px;
+}
+
+.dynamic {
+    font-size: 1.25rem;
+    opacity: 0;
+    transition-duration: 1000ms;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+}
+
+input {
+    text-align:center;
+    border: 2px solid;
+    border-radius: 3px;
+    font-family:Georgia;
+    background: white;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1000ms;
+}
