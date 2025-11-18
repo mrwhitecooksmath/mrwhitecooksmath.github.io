@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>the civil word</title>
+
+    <!-- SVG emoji favicon -->
+    <link rel="icon" type="image/svg+xml"
+      href='data:image/svg+xml;utf8,
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+        <style>
+          text { 
+            font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; 
+            font-size: 48px; 
+          }
+        </style>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">📜</text>
+      </svg>'>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="content">
-        <h1 class="title">🔏 the civil word</h1>
-        <h1 class="under-title">new word association puzzle every monday, wednesday, and friday</h1>
+        <h1 class="title">📜 the civil word</h1>
+        <h1 class="under-title">daily cross-domain word puzzles each dedicated to one unifying solution</h1>
         <p class="dynamic" id="indicator">⚫⚫⚫⚫⚫</p>
         <h1 class="content-header">clues</h1>
         <p class="dynamic" id="clue1">-</p>
@@ -20,9 +36,17 @@
         <p class="dynamic" id="clue5">-</p>
         <p class="dynamic" id="solnLength">-</p>
         <h1 class="content-header">guess</h1>
-        <input type="text" maxLength=10 id="guessBox">
+        <input type="text" maxLength="10" id="guessBox">
         <p class="dynamic" id="previous"></p>
+
+        <!-- New Share Feature -->
+        <button id="shareButton" style="display:none;">share result</button>
+        <p id="copyNotice" style="opacity:0; transition: opacity 0.5s;">✅ copied</p>
     </div>
-    <script src="script.js" type="text/javascript"></script>
+
+    <!-- Load puzzle bank first -->
+    <script src="puzzles.js"></script>
+    <!-- Then load game logic -->
+    <script src="script.js"></script>
 </body>
 </html>

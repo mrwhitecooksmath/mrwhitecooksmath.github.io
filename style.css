@@ -4,9 +4,9 @@ div {
 }
 
 #content {
-    margin:auto;
-    width:275px;
-    padding:7px;
+    margin: auto;
+    width: 280px;
+    padding: 7px;
 }
 
 .title {
@@ -32,12 +32,41 @@ div {
 }
 
 input {
-    text-align:center;
+    text-align: center;
     border: 2px solid;
     border-radius: 3px;
-    font-family:Georgia;
+    font-family: Georgia;
     background: white;
     transition-property: background-color;
     transition-timing-function: ease-in-out;
     transition-duration: 1000ms;
+}
+
+#shareButton {
+    display: none;
+    margin-top: 15px;
+    padding: 6px 14px;
+    font-family: Georgia;
+    font-size: 0.95rem;
+    border: 2px solid;
+    border-radius: 3px;
+    background: white;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out,
+                color 300ms ease-in-out;
+}
+
+#shareButton:hover {
+    background: rgb(240, 240, 240);
+}
+
+#shareButton:active {
+    background: rgb(220, 220, 220);
+}
+
+#copyNotice {
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    margin-top: 5px;
 }
